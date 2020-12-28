@@ -1,0 +1,6 @@
+- name: ping my hosts
+  hosts: "all"
+#  become: yes
+
+  roles:
+    - ping-pong
