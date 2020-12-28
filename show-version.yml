@@ -1,6 +1,7 @@
 - name: show version
   hosts: "all"
 #  become: yes
+  gather_facts: no
 
   roles:
     - show-version
