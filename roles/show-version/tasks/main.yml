@@ -1,3 +1,10 @@
 - name: run show version on remote devices
   junipernetworks.junos.junos_command:
-    commands: show version
+    commands:
+      - show version
+      - show interfaces
+      - show system uptime
+  register: out01
+
+- debug:
+    var: out01
