@@ -6,11 +6,11 @@
     - Juniper.junos
   connection: local
   gather_facts: false
-  tasks:
-    - debug:
-        var: inventory_hostname
-    - debug:
-        var: ansible_host
+#  tasks:
+#    - debug:
+#        var: inventory_hostname
+#    - debug:
+#        var: ansible_host
   vars_prompt:
     - name: username
       prompt: Junos Username
