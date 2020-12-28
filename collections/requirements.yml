@@ -1,1 +1,2 @@
-- name: junipernetworks.junos
+collection:
+  - name: junipernetworks.junos
