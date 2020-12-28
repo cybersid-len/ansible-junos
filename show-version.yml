@@ -1,0 +1,6 @@
+- name: show version
+  hosts: "all"
+#  become: yes
+
+  roles:
+    - show-version
