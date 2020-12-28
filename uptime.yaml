@@ -11,13 +11,13 @@
 #        var: inventory_hostname
 #    - debug:
 #        var: ansible_host
-  vars_prompt:
-    - name: username
-      prompt: Junos Username
-      private: no
-    - name: password
-      prompt: Junos Password
-      private: yes
+#  vars_prompt:
+#    - name: username
+#      prompt: Junos Username
+#      private: no
+#    - name: password
+#      prompt: Junos Password
+#      private: yes
   tasks:
     - name: get uptime using galaxy module
       juniper_junos_command:
