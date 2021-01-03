@@ -6,7 +6,6 @@
       - show interfaces
       - show system uptime
   register: out01
-  timeout: 360
 
 - debug:
     var: out01
