@@ -1,5 +1,4 @@
 - name: run show version on remote devices
-  connection: local
   junipernetworks.junos.junos_command:
     commands:
       - show version
