@@ -1,0 +1,7 @@
+- name: configurable backup path
+  junipernetworks.junos.junos_config:
+    src: ex2200.cfg
+    backup: yes
+    backup_options:
+      filename: backup.cfg
+      dir_path: /home/parallels/backup
