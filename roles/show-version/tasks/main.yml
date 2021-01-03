@@ -1,5 +1,6 @@
 - name: run show version on remote devices
   connection: local
+  timeout: 360
   junipernetworks.junos.junos_command:
     commands:
       - show version
