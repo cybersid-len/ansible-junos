@@ -4,8 +4,7 @@
     dest: "{{ config_filename }}"
     format: text
     retrieve: committed
-- include_tasks:
-  name: display path to latest backup file
+- name: display path to latest backup file
     debug:
      msg: "The configuration backup is in {{ config_filename }}"
 
