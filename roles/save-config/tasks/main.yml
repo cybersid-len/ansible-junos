@@ -4,7 +4,4 @@
     dest: "{{ config_filename }}"
     format: text
     retrieve: committed
-- name: display path to latest backup file
-    debug:
-     msg: "The configuration backup is in {{ config_filename }}"
 
