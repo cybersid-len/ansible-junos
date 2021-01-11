@@ -1,6 +1,7 @@
+---
 systime: "{{ ansible_date_time.time | replace(':', '-') }}"
 config_dir: "{{ user_data_path }}/config_backups/{{ inventory_hostname }}"
 config_filename: "{{ config_dir }}/{{ inventory_hostname }}_{{ hostvars.localhost.timestamp }}.conf"
 connection_settings:
- host: "{{ ansible_host }}"
+  host: "{{ ansible_host }}"
 
